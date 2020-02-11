@@ -1,0 +1,106 @@
+/* To make the heading glow */
+
+.glow
+{
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow
+{
+    from
+    {
+      text-shadow: 0 0 10px gold, 0 0 20px gold, 0 0 30px gold, 0 0 40px #e60073, 0 0 50px gold, 0 0 60px gold, 0 0 70px gold;
+    }
+    
+    to 
+    {
+      text-shadow: 0 0 20px gold, 0 0 30px gold, 0 0 40px gold, 0 0 50px gold, 0 0 60px gold, 0 0 70px gold, 0 0 80px gold;
+    }
+}
+
+/* To style the picture */
+
+.mypic
+{
+    width:150px;
+    height:170px;
+    border: 10px solid transparent;
+    border-color: rgb(165, 157, 157);
+}
+
+/*To make the description text color gold*/
+
+.moto
+{
+    color: gold;
+}
+
+/*To make the description text color white and align in center*/
+
+.description
+{
+    color: white;
+    text-align: center;
+}
+
+/*To align the text in center and bring the dots also at center*/
+
+ul
+{
+    text-align: center;
+    list-style-position: inside;
+}
+
+/*To make the college name text color gold*/
+
+.college_name
+{
+    color: gold;
+}
+
+/*To make all buttons have background color , text as gold*/
+
+.btn-group button
+{
+    background-color: black; /* Black background */
+    border: 1px solid white; /* White border */
+    color: gold; /* Gold text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    margin-left: 10px; /* Separate the buttons by space */
+}
+
+.btn-group button:not(:last-child)
+{
+    border-right: none; /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+
+.btn-group:after
+{
+    content: "";
+    clear: both;
+    display: table;
+}
+  
+/* Add a background color on hover */
+
+.btn-group button:hover
+{
+    background-color: #f6f8f68a;
+}
+
+/* To make entire font of the website same and get a background image */
+body
+{
+    background-image: url(back.jpg);
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    float: center;
+}
